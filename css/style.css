@@ -92,8 +92,8 @@ h1 {
 	top:50px;
 	left: 140px;
 	background-position: -213px -3251px; 
-	width: 162px; 
-	height: 67px;
+	width: 161px; 
+	height: 65px;
 }
 a.logo:hover {
 	background-position: -20px -3316px; 
@@ -114,7 +114,7 @@ nav {
 	font-size:16px;
 	text-transform:uppercase;
 }
-.sort {
+.sorter {
 	position: relative;
 	display: inline-block;
 	margin-left: 230px;
@@ -122,7 +122,7 @@ nav {
 	font-family: roboto-regular;
 	font-size:14px;
 }
-.sort1 {
+.sort {
 	margin-left: 10px;
 }
 nav ul {
@@ -165,7 +165,7 @@ nav li > a:active {
 }
 
 .basket {
-	margin-left: 245px;
+	margin-left: 100px;
 	margin-right: 26px;
 }
 .transform180 {
@@ -188,21 +188,21 @@ nav li > a:active {
 }
 .header_h1 {
 	font-size: 55px;
-	font-family:roboto-medium;
+	font-family:roboto-medium, arial, sans-serif;
 	color: #000;
 	text-align: center;
 	text-transform: none;
 }
 .header_text {
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family: roboto-regular, arial, sans-serif;
 	color: #283136;
 	text-transform: none;
 }
-.header_batton {
+.standart_batton {
 	width:240px;
 	height:50px;
-	font-family:roboto-medium ;
+	font-family: roboto-medium, arial, sans-serif;
 	font-size:16px;
 	color: #fff;
 	margin-left: 0px;
@@ -212,46 +212,75 @@ nav li > a:active {
 }
 .batton_red {
 	background-color:#fb565a;
-	box-shadow:inset 0px 2px 5px 0px #c13135;
 	cursor: pointer;
+}
+button.batton_red:hover {
+	background-color: #e74246;
+}
+button.batton_red:active {
+	background-color: #d7373b;
+	color: #e37376;
+	border-top: inset; #c13135;
 }
 .batton_green {
 	background-color:#00ca74;
-	box-shadow:inset 0px 2px 5px 0px #009958;
 	cursor: pointer;
+}
+button.batton_green:hover {
+	background-color: #00bc6c;
+}
+button.batton_green:active {
+	background-color: #00bc6c;
+	color: #4dc491;
+	border-top: inset; #009958;
 }
 .batton_yellow {
 	background-color:#efc84a;
-	box-shadow:inset 0px 2px 5px 0px #ce961f;
 	cursor: pointer;
 }
-.slider_indicator {
+button.batton_yellow:hover {
+	background-color: #eab534;
+}
+button.batton_yellow:active {
+	background-color: #e5a722;
+	color: #edc265;
+	border-top: inset; #ce961f;
+}
+.batton_grey {
+	background-color:#eeeeee;
+	cursor: pointer;
+}
+button.batton_grey:hover {
+	background-color: #dfdfdf;
+}
+button.batton_grey:active {
+	background-color: #d5d5d5;
+	color: #959595;
+	border-top: inset; #bfbfbf;
+}
+.slider_indicators {
 	position: absolute;
 	display: block;
-	width: 90px;
+	width: 100px;
 	height: 20px;
 	left: 50%;
 	margin-left: -45px;
 	bottom: 70px;
 }
-.slider_indicator_passive {
+.slider_indicator {
 	position: relative;
 	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background-color: #fff;
-	border-radius: 10px;
-}
-.slider_indicator_active1 {
-	position: relative;
-	top:6px;
-	left: 6px;
 	width: 8px;
 	height: 8px;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 6px solid #fff;
 	background-color: #c1c1c1;
-	border-radius: 4px;
 }
-.slider_indicator_active2 {
+.passive {
+	background-color: #fff;
+}
+.active {
 	position: relative;
 	top:2px;
 	left: 2px;
@@ -259,7 +288,6 @@ nav li > a:active {
 	height: 4px;
 	background-color: #fff;
 	border-radius: 2px;
-	z-index: 1;
 }
 .standart {
 	position: relative;
@@ -286,20 +314,20 @@ nav li > a:active {
 }
 .advantages_h2 {
 	font-size: 24px;
-	font-family:roboto-bold;
+	font-family:roboto-bold, arial, sans-serif;
 	color: #000;
 	text-transform: uppercase;
 }
 .advantages_p {
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 }
 .advantages_batton {
 	width:160px;
 	height:50px;
-	font-family:roboto-medium ;
+	font-family:roboto-medium, arial, sans-serif;
 	font-size:16px;
 	color: #fff;
 	margin-left: 0px;
@@ -332,13 +360,13 @@ nav li > a:active {
 }
 .little_studio {
 	font-size: 45px;
-	font-family:roboto-medium;
+	font-family:roboto-medium, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 }
 .orderings {
 	font-size: 16px;
-	font-family:roboto-bold;
+	font-family:roboto-bold, arial, sans-serif;
 	color: #000;
 	text-transform: uppercase;
 }
@@ -347,7 +375,7 @@ nav li > a:active {
 	padding-left: 10px;
 	font-size: 16px;
 	vertical-align: middle;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 }
@@ -376,13 +404,13 @@ nav li > a:active {
 }
 .statistic1 {
 	font-size: 45px;
-	font-family:roboto-bold;
+	font-family:roboto-bold, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 }
 .statistic2 {
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 }
@@ -419,7 +447,7 @@ nav li > a:active {
 }
 .contacts_title {
 	font-size: 18px;
-	font-family:roboto-bold;
+	font-family:roboto-bold, arial, sans-serif;
 	text-align: center;
 	color: #000;
 	margin-top: 50px;
@@ -427,7 +455,7 @@ nav li > a:active {
 }
 .adres {
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	text-align: center;
 	color: #000;
 	text-transform: none;
@@ -435,7 +463,7 @@ nav li > a:active {
 .contacts_batton {
 	width:220px;
 	height:50px;
-	font-family:roboto-medium ;
+	font-family:roboto-medium, arial, sans-serif;
 	font-size:16px;
 	color: #fff;
 	margin-left: 50px;
@@ -449,7 +477,7 @@ nav li > a:active {
 	position:relative;
 	display: block;
 	left: 140px;
-	top: 320px;
+	top: 220px;
 	height: 220px;
 	background-color: #fff;
 	vertical-align: middle;
@@ -519,7 +547,7 @@ a.footer_icon_insta:active {
 }
 .footer_text1 {
 	font-size: 36px;
-	font-family:roboto-bold;
+	font-family:roboto-bold, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 	margin: 0;
@@ -527,7 +555,7 @@ a.footer_icon_insta:active {
 }
 .footer_text2 {
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 	margin: 0;
@@ -536,7 +564,7 @@ a.footer_icon_insta:active {
 .bg_map {
 	position: relative;
 	width: 1440px;
-	height: 420px;
+	height: 416px;
 	top: 150px;
 	margin: 0 auto;
 	background:#b5b5b5 url(../img/map.png);
@@ -560,7 +588,7 @@ a.footer_icon_insta:active {
 }
 .contact_us_title {
 	font-size: 45px;
-	font-family:roboto-medium;
+	font-family:roboto-medium, arial, sans-serif;
 	color: #000;
 	padding-top: 65px;
 	padding-left: 100px;
@@ -581,7 +609,7 @@ a.footer_icon_insta:active {
 	width: 358px;
 	height: 50px;
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	border: 1 solid #d7dcde;
 	color: #d7dcde;
 	padding-left : 14px;
@@ -591,23 +619,23 @@ a.footer_icon_insta:active {
 	height: 120px;
 	vertical-align: none;
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	border: 1 solid #d7dcde;
 	color: #d7dcde;
 	padding-left : 14px;
 }
 .cont_label {
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	color: #000;
 	text-transform: none;
 }
 .contact_us_batton {
 	width:260px;
 	height:50px;
-	font-family:roboto-medium ;
+	font-family:roboto-medium, arial, sans-serif;
 	font-size:16px;
-	color: #000;
+	color: #fff;
 	text-align: center;
 	margin-left: 0px;
 	margin-top: 30px;
@@ -616,7 +644,7 @@ a.footer_icon_insta:active {
 .contact_close_batton {
 	position: absolute;
 	display: block;
-	font-family:roboto-medium ;
+	font-family:roboto-medium, arial, sans-serif;
 	font-size:35px;
 	color: #fecccd;
 	right: 90px;
@@ -628,6 +656,67 @@ a.footer_icon_insta:active {
 	0% {transform: translateY(1500px);}
 	80% {transform: translateY(10px);}
 	100% {transform: translateY(0);}
+}
+/*----------------------------------------------фильтр    МАГАЗИН-----*/
+.range_filter {
+	width: 240px;
+	margin: 0px;
+}
+.range_controls {
+	position: relative;
+	height: 41px;
+	padding-top: 39px;
+	padding-right:20px;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	background: #f1f1f1; 
+}
+.range_controls .scale{
+	height: 2px;
+	background: #d7dcde;
+}
+.range_controls .bar {
+	width: 70%;
+	height: 2px;
+	background: #00ca74;
+}
+.range_controls .toggle {
+	position: absolute;
+	top:30px;
+	left: 0px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	background:#ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
+}
+.range_controls .toggle-min {
+	left: 20px;
+}
+.range_controls .toggle-max {
+	left: 145px;
+}
+.price_controls {
+	font-size: 0;
+}
+.price_controls label {
+	font-size: 16px;
+	display: inline-block;
+	width: 50%;
+}
+.price_controls input {
+	font-family: roboto-medium, arial,sans-serif;
+	font-size: 16px;
+	width: 60px;
+	padding: 8px 10px;
+	text-align: center;
+	color: #283136;
+	border-radius: 5px;
+	border:none;
+	background: #f1f1f1;
 }
 /*-----------------------------------------------шаблон   МАГАЗИН----*/
 .shop {
@@ -647,6 +736,9 @@ a.footer_icon_insta:active {
 	height: 40px;
 	background-color: #e9e9e9;
 	border-radius: 3px 3px 0 0;
+}
+a:hover div.design_pattern_title {
+	background-color: #4d4d4d;
 }
 .point {
 	position: relative;
@@ -681,7 +773,7 @@ a.footer_icon_insta:active {
 }
 .idp_text	{
 	font-size: 16px;
-	font-family:roboto-regular;
+	font-family:roboto-regular, arial, sans-serif;
 	color: #666;
 	text-transform: none;
 	line-height: 1.1;
@@ -690,7 +782,7 @@ a.footer_icon_insta:active {
 }
 .idp_text_title {
 	font-size: 18px;
-	font-family:roboto-bold;
+	font-family:roboto-bold, arial, sans-serif;
 	color: #000;
 	padding-top: 25px;
 	text-transform: uppercase;
@@ -712,43 +804,69 @@ a:active div.info_design_pattern {
 	margin-top: 45px;
 	vertical-align: top;
 }
-/*.shop_column:nth-child(1) {
-	margin-left: 0px;
-}*/
 .doble_width {
 	width: 900px;
 }
-
 /*-----------------------------------фильтр магазин----*/
-
-.shop_label {
+.shop_h2 {
 	position: relative;
 	display: block;
 	font-size: 18px;
-	font-family:roboto-bold;
+	font-family:roboto-bold, arial, sans-serif;
 	color: #000;
+	padding-top: 20px;
 	padding-bottom:50px;
 	text-transform: uppercase;
+}
+.shop_label, .shop_label_check {
+	position: relative;
+	display: block;
+	font-size: 16px;
+	top: 0;
+	font-family:roboto-regular, arial, sans-serif;
+	color: #000;
+	padding-left: 40px;	
+	padding-top: 20px;
+}
+.shop_label:before {
+	position: absolute;	
+	content: '';
+	top: 15px;
+	left: 0;
+	width: 24px;	
+	height: 24px;	
+	background-image: url(../img/radio-off.png);
+	vertical-align: middle;
+	}
+input:checked + .shop_label:before {
+	background-image: url(../img/radio-on.png);
+}
+.shop_label_check:before {
+	position: absolute;	
+	content: '';
+	top: 15px;
+	left: 0;
+	width: 24px;	
+	height: 24px;	
+	background-image: url(../img/checkbox-off.png);
+	vertical-align: middle;
+	}
+input:checked + .shop_label_check:before {
+	background-image: url(../img/checkbox-on.png);
 }
 .inline {
 	display: inline-block;
 }
 .shop_input {
-	position: relative;
-	display: block;
-	width: 20px;
-	height: 20px;
-	vertical-align: none;
-	font-size: 16px;
-	font-family:roboto-regular;
-	border: 1 solid #d7dcde;
-	color: #eee;
-	padding-left : 14px;
+	display: none;
+}
+.form {
+	margin-top: 20px;
 }
 .shop_button {
 	position: relative;
 	display: block;
-	font-family:roboto-medium ;
+	font-family:roboto-medium, arial, sans-serif;
 	font-size:16px;
 	color: #000;
 	width: 260px;
@@ -787,7 +905,7 @@ a:active div.info_design_pattern {
 	margin-right: 10px;
 	color: #000;
 	font-size: 16px;
-	font-family: roboto-medium;
+	font-family: roboto-medium, arial, sans-serif;
 	border-radius: 2px;
 }
 .page_btn {
@@ -804,7 +922,7 @@ a:active div.info_design_pattern {
 	text-align: center;
 	color: #000;
 	font-size: 16px;
-	font-family: roboto-medium;
+	font-family: roboto-medium, arial, sans-serif;
 	border-radius: 2px;
 }
 button.page_btn:hover {
@@ -830,7 +948,7 @@ button.page_btn:active {
 	text-align: center;
 	color: #000;
 	font-size: 16px;
-	font-family: roboto-medium;
+	font-family: roboto-medium, arial, sans-serif;
 	border-radius: 2px;
 	text-transform:uppercase;
 }
